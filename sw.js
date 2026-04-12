@@ -1,4 +1,5 @@
-const CACHE_NAME = 'vignette-builder-v1';
+const BASE_URL = `https://swcraftstras.github.io/banner-generator`;
+const CACHE_NAME = 'banner-builder-v1';
 const urlsToCache = [
     '/',
     '/index.html',
@@ -21,7 +22,7 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME)
             .then(cache => {
                 console.log('[ServiceWorker] Caching app shell');
-                return cache.addAll(urlsToCache.map(it=>`https://swcraftstras.github.io/banner-generator${it}`));
+                return cache.addAll(urlsToCache.map(it => `${BASE_URL}${it}`));
             })
     );
 });
