@@ -5,6 +5,13 @@
 - No build
 - Vendored dependencies are in [public/lib/vendor](lib/vendor) with sources, license and link to origin
 
+## Features
+
+- Banner preview
+- Png banner export
+- Live update
+- Localstorage (keeps data if window is reloaded)
+
 ## Run locally
 
 ```shell
