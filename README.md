@@ -8,7 +8,7 @@
 ## Run locally
 
 ```shell
-npx vite public
+npx vite .
 ```
 
 ## Browser compatibility
