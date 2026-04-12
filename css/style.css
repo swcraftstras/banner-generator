@@ -24,7 +24,7 @@ input[type="text"], input[type="file"] {
 button {
     padding: .75rem 1rem;
     cursor: pointer;
-    background-color: #3498db;
+    background-color: #505d97;
     color: white;
     border: none;
     border-radius: 3px;
@@ -40,8 +40,8 @@ button {
 }
 
 .remove-button {
-    background: red;
-    padding: .125em;
+    background: #9a2626;
+    padding: .5em;
 }
 
 /* Inspired from https://smolcss.dev/#smol-flexbox-grid */
