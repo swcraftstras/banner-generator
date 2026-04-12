@@ -1,0 +1,41 @@
+# Banner generator for Software Craft Strasbourg Meetup
+
+- Vanilla JS
+- Javascript modules
+- No build
+- Vendored dependencies are in [public/lib/vendor](public/lib/vendor) with sources, license and link to origin
+
+## Run locally
+
+```shell
+npx vite public
+```
+
+## Browser compatibility
+
+Baseline 2006
+
+- [CSS 2.1 attribute selector](https://caniuse.com/css-sel2)
+
+Baseline 2013
+
+- [CSS child combinator `A > B`](https://caniuse.com/mdn-css_selectors_child)
+
+Baseline 2015
+
+- [canvas](https://caniuse.com/canvas)
+- [CSS flexbox](https://caniuse.com/flexbox)
+
+Baseline 2017
+
+- [gap](https://caniuse.com/mdn-css_properties_gap)
+- [CSS variables (custom properties)](https://caniuse.com/css-variables)
+
+Baseline 2018
+
+- [es6 Script modules](https://caniuse.com/es6-module)
+
+Baseline 2023
+
+- [CSS nesting](https://caniuse.com/css-nesting)
+

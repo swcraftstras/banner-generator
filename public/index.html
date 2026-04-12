@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Meetup Banner Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="banner-rendering.css">
+    <script type="module" src="lib/main.js"></script>
+</head>
+<body>
+<main>
+    <section id="input-form">
+        <h2 style="margin-top: 0;">Event Data Entry</h2>
+        <button id="resetEventButton" class="mv-1">Reset</button>
+        <div class="responsive-flexbox-grid">
+            <div>
+                <section class="section" aria-labelledby="eventInfo">
+                    <h3 id="eventInfo" style="margin-top: 0;">Event Info</h3>
+                    <label for="eventTitle">Event Title:</label>
+                    <input type="text" id="eventTitle" required>
+                    <label for="eventSubtitle">Event Subtitle:</label>
+                    <input type="text" id="eventSubtitle">
+                </section>
+                <!-- Sponsors are folded by default because we usually have the default one -->
+                <details>
+                    <summary>Sponsors</summary>
+                    <section class="section" aria-labelledby="sponsorsInfos">
+                        <h3 id="sponsorsInfos" style="margin-top: 0;">Sponsors</h3>
+                        <label for="sponsorName">Sponsor Name:</label>
+                        <input type="text" id="sponsorName" required>
+                        <label for="sponsorPhoto">Sponsor Logo:</label>
+                        <input type="file" id="sponsorPhoto" accept="image/*" required>
+                        <button id="addSponsorButton">Add Sponsor</button>
+                        <h4 style="margin-top: 15px;">Current Sponsors:</h4>
+                        <div id="sponsorsList"><!-- Dynamic added sponsors rendered here --></div>
+                    </section>
+                </details>
+            </div>
+
+            <section class="section" aria-labelledby="speakersInfos">
+                <h3 id="speakersInfos" style="margin-top: 0;">Speakers</h3>
+                <label for="speakerName">Speaker Name:</label>
+                <input type="text" id="speakerName" required>
+                <label for="speakerPhoto">Speaker Photo:</label>
+                <input type="file" id="speakerPhoto" accept="image/*" required>
+                <button id="addSpeakerButton">Add Speaker</button>
+                <h4 style="margin-top: 15px;">Current Speakers:</h4>
+                <div id="speakersList"><!-- Dynamic added speakers rendered here --></div>
+            </section>
+        </div>
+    </section>
+
+    <section id="preview-area">
+        <h2 style="margin-top: 0;">Banner</h2>
+        <button id="exportBannerButton" class="mv-1">Export Banner Image</button>
+        <div id="banner-container"><!-- Banner content rendered here --></div>
+    </section>
+
+</main>
+</body>
+</html>

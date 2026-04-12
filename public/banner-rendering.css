@@ -1,0 +1,85 @@
+/* Only banner related styles
+The banner is rendered 1200x675 pixels
+Use px measures in this file
+*/
+#banner-container {
+    font-family: sans-serif;
+    border: none;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    background-color: #293656;
+    color: #eee;
+    width: 1200px;
+    height: 675px;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+
+    .meetup-name {
+        text-align: center;
+        font-family: "Courier New", serif;
+        font-size: 48px;
+        font-weight: bold;
+        width: 100%;
+        margin: 0;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        p.subtitle {
+            font-size: 20px;
+            margin-top: 5px;
+        }
+    }
+
+    .logo {
+        width: 140px;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .speakers-section, .sponsors-section {
+        margin-bottom: 30px;
+    }
+
+    .speaker-grid {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .speaker-card {
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+    }
+
+    .sponsor-logo {
+        img {
+            max-width: 140px;
+            height: auto;
+            border-radius: 50%;
+        }
+    }
+
+    .sponsor-grid {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+}
