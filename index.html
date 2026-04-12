@@ -59,6 +59,21 @@
         <div id="banner-container"><!-- Banner content rendered here --></div>
     </section>
 </main>
-<footer><a href="https://github.com/swcraftstras/banner-generator">Source code</a> — Copyright 2026 Marc Bouvier — License MIT</footer>
+<footer><a href="https://github.com/swcraftstras/banner-generator">Source code</a> — Copyright 2026 Marc Bouvier —
+    License MIT
+</footer>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+                .then(registration => {
+                    console.log('SW registered:', registration);
+                })
+                .catch(registrationError => {
+                    console.error('SW registration failed:', registrationError);
+                });
+        });
+    }
+</script>
 </body>
 </html>

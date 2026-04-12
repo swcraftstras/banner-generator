@@ -17,7 +17,7 @@
 ## Run locally
 
 ```shell
-npx vite .
+npx vite preview --outDir .
 ```
 
 ## Browser compatibility
