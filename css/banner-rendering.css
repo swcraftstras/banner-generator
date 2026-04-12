@@ -20,6 +20,7 @@ Use px measures in this file
     .meetup-name {
         text-align: center;
         font-family: "JetBrains Mono", "Courier New", monospace;
+        font-optical-sizing: auto;
         font-size: 60px;
         width: 100%;
         margin: 0 0 25px;
@@ -36,6 +37,7 @@ Use px measures in this file
 
         h1 {
             font-family: "Gill Sans", sans-serif;
+            font-optical-sizing: auto;
             font-style: italic;
             font-size: 62px;
             font-weight: normal;
@@ -45,7 +47,8 @@ Use px measures in this file
         }
 
         p.subtitle {
-            font-family: "Gill Sans",  sans-serif;
+            font-optical-sizing: auto;
+            font-family: "Gill Sans", sans-serif;
             font-style: italic;
             max-width: 20ch;
             overflow-wrap: break-word;
@@ -82,7 +85,6 @@ Use px measures in this file
         display: flex;
         flex-direction: column;
         align-items: center;
-        /*Georegia Italic*/
 
         img {
             width: 130px;
@@ -95,6 +97,7 @@ Use px measures in this file
             margin-top: 6px;
             font-family: Georgia, serif;
             font-style: italic;
+            font-optical-sizing: auto;
         }
     }
 

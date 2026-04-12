@@ -1,0 +1,8 @@
+/* latin */
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 100 800;
+    font-display: swap;
+    src: url('JetBrainsMono-Regular.woff2') format('woff2');
+}
