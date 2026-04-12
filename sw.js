@@ -21,7 +21,7 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME)
             .then(cache => {
                 console.log('[ServiceWorker] Caching app shell');
-                return cache.addAll(urlsToCache);
+                return cache.addAll(urlsToCache.map(it=>`https://swcraftstras.github.io/banner-generator${it}`));
             })
     );
 });
