@@ -1,0 +1,21 @@
+{
+  "name": "Meetup Banner Builder",
+  "short_name": "BannerGen",
+  "description": "Tool to generate event banners for Software Craft Strasbourg.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#293656",
+  "theme_color": "#3498db",
+  "icons": [
+    {
+      "src": "assets/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
