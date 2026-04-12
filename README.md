@@ -3,7 +3,7 @@
 - Vanilla JS
 - Javascript modules
 - No build
-- Vendored dependencies are in [public/lib/vendor](public/lib/vendor) with sources, license and link to origin
+- Vendored dependencies are in [public/lib/vendor](lib/vendor) with sources, license and link to origin
 
 ## Run locally
 
