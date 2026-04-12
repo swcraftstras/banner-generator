@@ -16,9 +16,10 @@ Use px measures in this file
     flex-direction: column;
 
     /*Jetbrains Mono Regular*/
+
     .meetup-name {
         text-align: center;
-        font-family: "Courier New", serif;
+        font-family: "JetBrains Mono", "Courier New", monospace;
         font-size: 60px;
         width: 100%;
         margin: 0 0 25px;
@@ -29,11 +30,13 @@ Use px measures in this file
         flex-shrink: 4;
         flex-direction: column;
         align-items: center;
-        /*max-width: min-content;*/
         text-align: center;
 
         /*Gill Sans semibold italic*/
+
         h1 {
+            font-family: "Gill Sans", sans-serif;
+            font-style: italic;
             font-size: 62px;
             font-weight: normal;
             margin: 0;
@@ -42,6 +45,8 @@ Use px measures in this file
         }
 
         p.subtitle {
+            font-family: "Gill Sans",  sans-serif;
+            font-style: italic;
             max-width: 20ch;
             overflow-wrap: break-word;
             font-size: 50px;
@@ -49,7 +54,7 @@ Use px measures in this file
             font-weight: normal;
         }
     }
-    
+
     .event-content {
         display: flex;
         flex-direction: row-reverse;
@@ -67,10 +72,10 @@ Use px measures in this file
     }
 
     .speaker-card {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
     }
 
     .sponsor-logo {
@@ -78,11 +83,13 @@ Use px measures in this file
         flex-direction: column;
         align-items: center;
         /*Georegia Italic*/
+
         img {
             width: 130px;
             height: auto;
             border-radius: 50%;
         }
+
         .sponsor-name {
             font-size: 36px;
             margin-top: 6px;
