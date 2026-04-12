@@ -1,5 +1,7 @@
 # Banner generator for Software Craft Strasbourg Meetup
 
+[Use it live](https://swcraftstras.github.io/banner-generator/)
+
 - Vanilla JS
 - Javascript modules
 - No build
