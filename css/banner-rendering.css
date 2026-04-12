@@ -15,29 +15,36 @@ Use px measures in this file
     display: flex;
     flex-direction: column;
 
+    /*Jetbrains Mono Regular*/
     .meetup-name {
         text-align: center;
         font-family: "Courier New", serif;
         font-size: 60px;
         width: 100%;
-        margin: 0;
+        margin: 0 0 25px;
     }
 
     .header {
         display: flex;
+        flex-shrink: 4;
         flex-direction: column;
         align-items: center;
-        max-width: 540px;
+        /*max-width: min-content;*/
         text-align: center;
 
+        /*Gill Sans semibold italic*/
         h1 {
-            font-size: 48px;
+            font-size: 62px;
             font-weight: normal;
             margin: 0;
+            max-width: 20ch;
+            overflow-wrap: break-word;
         }
 
         p.subtitle {
-            font-size: 42px;
+            max-width: 20ch;
+            overflow-wrap: break-word;
+            font-size: 50px;
             margin-top: 10px;
             font-weight: normal;
         }
@@ -52,14 +59,8 @@ Use px measures in this file
         gap: 20px;
     }
 
-    .logo {
-        width: 140px;
-        height: auto;
-        border-radius: 50%;
-        margin-right: 15px;
-    }
-
     .speaker-grid {
+        flex-shrink: 4;
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
@@ -67,23 +68,34 @@ Use px measures in this file
 
     .speaker-card {
             width: 180px;
-            height: auto;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
     }
 
     .sponsor-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*Georegia Italic*/
         img {
-            max-width: 140px;
+            width: 130px;
             height: auto;
             border-radius: 50%;
+        }
+        .sponsor-name {
+            font-size: 36px;
+            margin-top: 6px;
+            font-family: Georgia, serif;
+            font-style: italic;
         }
     }
 
     .sponsor-grid {
         display: flex;
         gap: 30px;
-        justify-content: center;
+        justify-content: space-around;
     }
 
 }
+

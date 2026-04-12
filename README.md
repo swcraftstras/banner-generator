@@ -44,6 +44,9 @@ Baseline 2018
 
 - [es6 Script modules](https://caniuse.com/es6-module)
 
+Baseline 2020
+- [min-content](https://caniuse.com/wf-min-max-content)
+
 Baseline 2023
 
 - [CSS nesting](https://caniuse.com/css-nesting)
