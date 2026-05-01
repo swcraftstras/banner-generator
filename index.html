@@ -6,12 +6,14 @@
     <meta name="description" content="Génération de bannières pour les meetups Software Craft Strasbourg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/banner-rendering.css">
     <script type="module" src="/lib/main.js"></script>
-    <link rel="stylesheet" href="/fonts/jetbrains-mono/JetbrainsMono.css">
     <link rel="manifest" href="/manifest.json">
 </head>
 <body>
+<noscript id="deferred-styles">
+    <link rel="stylesheet" href="/fonts/jetbrains-mono/JetbrainsMono.css">
+    <link rel="stylesheet" href="/css/banner-rendering.css">
+</noscript>
 <main>
     <noscript>Activer Javascript pour utiliser cet outil</noscript>
     <section id="input-form">
@@ -76,6 +78,20 @@
                 });
         });
     }
+</script>
+<script defer>
+    // Deferred loading of non-critical styles for first rendering
+    const loadDeferredStyles = function() {
+        const addStylesNode = document.getElementById("deferred-styles");
+        const replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    const raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
 </script>
 </body>
 </html>
