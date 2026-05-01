@@ -1,6 +1,6 @@
 {
   "name": "Bannière Software Craft Strasbourg",
-  "short_name": "SwcraftStrasBanniere",
+  "short_name": "Bannières",
   "description": "Génération de bannières pour les meetups Software Craft Strasbourg.",
   "start_url": "/",
   "display": "standalone",
