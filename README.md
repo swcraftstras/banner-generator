@@ -16,13 +16,28 @@
 - Offline first : une fois chargée, l'application fonctionne hors-ligne
 - Manifeste PWA : permet d'installer l'application ou d'en faire un raccourci sur smartphone
 
+## Philosophie
+
+Faire un outil simple, et résilient.
+
+Simple : 
+- fait peu de choses et les fait bien
+- si des fonctionnalités de confort compliquent trop l'outil on préférera ne pas les faire
+- je l'espère relativement facile à comprendre
+- nécessite peu d'outillage (éditeur de code, serveur web)
+
+Résilient :
+- pas de build, donc pas de surface d'attaque (supply chain attack)
+- s'appuie essentiellement sur des API présentes dans le navigateur (pas de mise à jour de framework)
+- baseline HTML/CSS la plus basse possible pour tourner sur des terminaux plutôt anciens
+
 ## Exécuter localement
 
 ```shell
 npx vite preview --outDir .
 ```
 
-## Compatibilité navigateur
+## Compatibilité navigateur : baseline 2018
 
 Baseline 2006
 
@@ -45,6 +60,3 @@ Baseline 2017
 Baseline 2018
 
 - [es6 Script modules](https://caniuse.com/es6-module)
-
-Baseline 2020
-- [min-content](https://caniuse.com/wf-min-max-content)
