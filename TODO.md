@@ -1,10 +1,5 @@
-
 ## Banner generation
 
-- host on subdomain to simplify relative path stuff
 - common HTML accessibility and SEO features
-- localize content to french
-- Local first and offline mode (Service worker and PWA)
-    - In progress
+- Local first (sync with several devices)
 - Improve speaker photo when not square
-- Allow generic use on subpath URL ? or host on banner.strasbourg-craft.fr ?
