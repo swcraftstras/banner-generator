@@ -1,4 +1,3 @@
-const BASE_URL = `https://swcraftstras.github.io/banner-generator`;
 const CACHE_NAME = 'banner-builder-v1';
 const urlsToCache = [
     '/',
@@ -22,7 +21,7 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME)
             .then(cache => {
                 console.log('[ServiceWorker] Caching app shell');
-                return cache.addAll(urlsToCache.map(it => `${BASE_URL}${it}`));
+                return cache.addAll(urlsToCache);
             })
     );
 });
