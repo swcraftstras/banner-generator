@@ -14,97 +14,99 @@ Use px measures in this file
     max-width: none;
     display: flex;
     flex-direction: column;
-
-    /*Jetbrains Mono Regular*/
-
-    .meetup-name {
-        text-align: center;
-        font-family: "JetBrains Mono", "Courier New", monospace;
-        font-optical-sizing: auto;
-        font-size: 60px;
-        width: 100%;
-        margin: 0 0 25px;
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-        /*Gill Sans semibold italic*/
-
-        h1 {
-            font-family: "Gill Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-style: italic;
-            font-size: 62px;
-            font-weight: normal;
-            margin: 0;
-            max-width: 20ch;
-            overflow-wrap: break-word;
-        }
-
-        p.subtitle {
-            font-optical-sizing: auto;
-            font-family: "Gill Sans", sans-serif;
-            font-style: italic;
-            max-width: 20ch;
-            overflow-wrap: break-word;
-            font-size: 50px;
-            margin-top: 10px;
-            font-weight: normal;
-        }
-    }
-
-    .event-content {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: auto;
-        margin-bottom: auto;
-        gap: 20px;
-    }
-
-    .speaker-grid {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    .speaker-card {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .sponsor-logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        img {
-            width: 130px;
-            height: auto;
-            border-radius: 50%;
-        }
-
-        .sponsor-name {
-            font-size: 36px;
-            margin-top: 6px;
-            font-family: Georgia, serif;
-            font-style: italic;
-            font-optical-sizing: auto;
-        }
-    }
-
-    .sponsor-grid {
-        display: flex;
-        gap: 30px;
-        justify-content: space-around;
-    }
-
 }
+
+/*Jetbrains Mono Regular*/
+
+#banner-container .meetup-name {
+    text-align: center;
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-optical-sizing: auto;
+    font-size: 60px;
+    width: 100%;
+    margin: 0 0 25px;
+}
+
+#banner-container .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*Gill Sans semibold italic*/
+
+#banner-container .header h1 {
+    font-family: "Gill Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-size: 62px;
+    font-weight: normal;
+    margin: 0;
+    max-width: 20ch;
+    overflow-wrap: break-word;
+}
+
+#banner-container .header p.subtitle {
+    font-optical-sizing: auto;
+    font-family: "Gill Sans", sans-serif;
+    font-style: italic;
+    max-width: 20ch;
+    overflow-wrap: break-word;
+    font-size: 50px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+
+#banner-container .event-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    gap: 20px;
+}
+
+#banner-container .speaker-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#banner-container .speaker-card {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#banner-container .sponsor-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner-container .sponsor-logo img {
+    width: 130px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#banner-container .sponsor-logo .sponsor-name {
+    font-size: 36px;
+    margin-top: 6px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-optical-sizing: auto;
+}
+
+
+#banner-container .sponsor-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
 

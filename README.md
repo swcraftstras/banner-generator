@@ -20,7 +20,7 @@
 npx vite preview --outDir .
 ```
 
-## Browser compatibility
+## Compatibilité navigateur
 
 Baseline 2006
 
@@ -46,8 +46,3 @@ Baseline 2018
 
 Baseline 2020
 - [min-content](https://caniuse.com/wf-min-max-content)
-
-Baseline 2023
-
-- [CSS nesting](https://caniuse.com/css-nesting)
-
