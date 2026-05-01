@@ -1,6 +1,6 @@
 # Générateur de bannière pour le meetup Software Craft Strasbourg
 
-[Utiliser en live](https://banner.strasbourg-craft.fr)
+[Utiliser en live](https://banner.strasbourg-craft.fr) (le site est déployé automatiquement via Github Pages)
 
 - Vanilla JS (sans framework)
 - Javascript modules
