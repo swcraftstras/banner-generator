@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Meetup Banner Builder</title>
+    <title>Bannières - Software Craft Strasbourg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/banner-rendering.css">
@@ -12,17 +12,17 @@
 </head>
 <body>
 <main>
-    <noscript>This tool requires Javascript</noscript>
+    <noscript>Activer Javascript pour utiliser cet outil</noscript>
     <section id="input-form">
-        <h2 style="margin-top: 0;">Event Data Entry</h2>
-        <button id="resetEventButton" class="mv-1">Reset</button>
+        <h2 style="margin-top: 0;">Événement</h2>
+        <button id="resetEventButton" class="mv-1">Réinitialiser</button>
         <div class="responsive-flexbox-grid">
             <div>
                 <section class="section" aria-labelledby="eventInfo">
-                    <h3 id="eventInfo" style="margin-top: 0;">Event Info</h3>
-                    <label for="eventTitle">Event Title:</label>
+                    <h3 id="eventInfo" style="margin-top: 0;">Infos</h3>
+                    <label for="eventTitle">Titre</label>
                     <input type="text" id="eventTitle" required>
-                    <label for="eventSubtitle">Event Subtitle:</label>
+                    <label for="eventSubtitle">Sous-titre</label>
                     <input type="text" id="eventSubtitle">
                 </section>
                 <!-- Sponsors are folded by default because we usually have the default one -->
@@ -30,12 +30,12 @@
                     <summary>Sponsors</summary>
                     <section class="section" aria-labelledby="sponsorsInfos">
                         <h3 id="sponsorsInfos" style="margin-top: 0;">Sponsors</h3>
-                        <label for="sponsorName">Sponsor Name:</label>
+                        <label for="sponsorName">Nom</label>
                         <input type="text" id="sponsorName" required>
-                        <label for="sponsorPhoto">Sponsor Logo:</label>
+                        <label for="sponsorPhoto">Logo</label>
                         <input type="file" id="sponsorPhoto" accept="image/*" required>
-                        <button id="addSponsorButton">Add Sponsor</button>
-                        <h4 style="margin-top: 15px;">Current Sponsors:</h4>
+                        <button id="addSponsorButton">Ajouter</button>
+                        <h4 style="margin-top: 15px;">Sponsors courants</h4>
                         <div id="sponsorsList"><!-- Dynamic added sponsors rendered here --></div>
                     </section>
                 </details>
@@ -43,24 +43,24 @@
 
             <section class="section" aria-labelledby="speakersInfos">
                 <h3 id="speakersInfos" style="margin-top: 0;">Speakers</h3>
-                <label for="speakerName">Speaker Name:</label>
+                <label for="speakerName">Nom</label>
                 <input type="text" id="speakerName" required>
-                <label for="speakerPhoto">Speaker Photo:</label>
+                <label for="speakerPhoto">Photo</label>
                 <input type="file" id="speakerPhoto" accept="image/*" required>
-                <button id="addSpeakerButton">Add Speaker</button>
-                <h4 style="margin-top: 15px;">Current Speakers:</h4>
+                <button id="addSpeakerButton">Ajouter</button>
+                <h4 style="margin-top: 15px;">Speakers courants</h4>
                 <div id="speakersList"><!-- Dynamic added speakers rendered here --></div>
             </section>
         </div>
     </section>
 
     <section id="preview-area">
-        <h2 style="margin-top: 0;">Banner</h2>
-        <button id="exportBannerButton" class="mv-1">Export Banner Image</button>
+        <h2 style="margin-top: 0;">Bannière</h2>
+        <button id="exportBannerButton" class="mv-1">Exporter en image</button>
         <div id="banner-container"><!-- Banner content rendered here --></div>
     </section>
 </main>
-<footer><a href="https://github.com/swcraftstras/banner-generator">Source code</a> — Copyright 2026 Marc Bouvier —
+<footer><a href="https://github.com/swcraftstras/banner-generator">Code source</a> — Copyright 2026 Marc Bouvier —
     License MIT
 </footer>
 <script>

@@ -1,7 +1,7 @@
 {
-  "name": "Meetup Banner Builder",
-  "short_name": "BannerGen",
-  "description": "Tool to generate event banners for Software Craft Strasbourg.",
+  "name": "Bannière Software Craft Strasbourg",
+  "short_name": "SwcraftStrasBanniere",
+  "description": "Génération de bannières pour les meetups Software Craft Strasbourg.",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#293656",

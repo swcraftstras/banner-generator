@@ -1,20 +1,22 @@
-# Banner generator for Software Craft Strasbourg Meetup
+# Générateur de bannière pour le meetup Software Craft Strasbourg
 
-[Use it live](https://swcraftstras.github.io/banner-generator/)
+[Utiliser en live](https://banner.strasbourg-craft.fr)
 
-- Vanilla JS
+- Vanilla JS (sans framework)
 - Javascript modules
-- No build
-- Vendored dependencies are in [public/lib/vendor](lib/vendor) with sources, license and link to origin
+- Pas de build
+- Les dépendances sont présentes dans dans [public/lib/vendor](lib/vendor) accompagnées de leurs sources, license et URL d'origine
 
-## Features
+## Fonctionnalités
 
-- Banner preview
-- Png banner export
-- Live update
-- Localstorage (keeps data if window is reloaded)
+- Aperçu de bannière
+- Export de la bannière en PNG
+- Mise à jour automatique
+- Persitance via Localstorage (les modifications sont conservées même quand la page est rafraichie)
+- Offline first : une fois chargée, l'application fonctionne hors-ligne
+- Manifeste PWA : permet d'installer l'application ou d'en faire un raccourci sur smartphone
 
-## Run locally
+## Exécuter localement
 
 ```shell
 npx vite preview --outDir .
